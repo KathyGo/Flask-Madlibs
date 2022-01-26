@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Madlibs Story Templates{% endblock %}
+
+{% block content %}
+<h1>Edit your story: {{title}}</h1>   
+<form action="/story">
+    <input type="hidden" name="storyId" value={{storyId}}>
+{% for prompt in prompts %}
+    <div>
+        <label for={{prompt}}>{{prompt}}</label>
+        <input type="text" id={{prompt}} name={{prompt}}>
+    </div> 
+{% endfor %}
+    <button>Submit</button>
+</form>
+{% endblock %}
