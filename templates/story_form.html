@@ -7,8 +7,8 @@
     <input type="hidden" name="storyId" value={{storyId}}>
 {% for prompt in prompts %}
     <div>
-        <label for={{prompt}}>{{prompt}}</label>
-        <input type="text" id={{prompt}} name={{prompt}}>
+        <label for={{prompt}} class="form-label">{{prompt}}</label>
+        <input type="text" id={{prompt}} calss = "form-input" name={{prompt}}>
     </div> 
 {% endfor %}
     <button>Submit</button>
