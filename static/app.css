@@ -1,16 +1,57 @@
-h1 {
+h1,
+.title {
 	display: block;
 	font-size: 2em;
-	margin-top: 0.67em;
-	margin-bottom: 0.67em;
+	padding-top: 0.67em;
+	padding-bottom: 0.67em;
+	margin-top: 0;
 	font-weight: bold;
 	text-align: center;
+	background-color: rgb(167, 250, 222);
+	color: teal;
+	font-style: italic;
+}
+
+h2 {
+	font-style: italic;
 }
 
 body {
-	background-color: purple;
+	margin: 0;
+}
+
+#subtitle {
+	font-size: 1em;
+	font-weight: lighter;
+	margin-top: 0;
+	margin-bottom: 0.67em;
+}
+
+#story-form {
+	margin-left: 0.67em;
+	font-size: 1.5em;
 }
 
 .form-label {
+	display: inline-block;
+	width: 15%;
+	font-style: italic;
+}
+
+.form-input {
+	display: inline-block;
 	width: 25%;
+	height: 2em;
+	margin-top: 0.67em;
+}
+
+.form-submit {
+	height: 10px;
+	font-size: 1.5em;
+}
+
+.story-content {
+	font-size: 1.5em;
+	text-align: center;
+	color: rgb(243, 157, 171);
 }

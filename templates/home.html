@@ -2,11 +2,15 @@
 {% block title %}Madlibs{% endblock %}
 
 {% block content %}
-<h1>MADLIBS</h1>    
+<section class="title">
+    <h1>MADLIBS</h1>  
+    <p id="subtitle">create your own stories</p>  
+</section>
+
 <h2>Choose your story template</h2>
 <form action="/story_form">
-    <label for="template-list">Choose a template:</label>
-    <select name="select-template" id="template-list">
+    <label for="template-list" class="form-label">Choose a template:</label>
+    <select name="select-template" id="template-list" class="form-input">
         {% for story in stories %}
         <option value="{{story.id}}"">{{story.title}}</option>
         {% endfor %}
